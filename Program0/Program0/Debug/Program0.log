@@ -1,2 +1,7 @@
 ﻿  main.cpp
-C:\Users\Landon\Documents\GitHub\Buell-CS410-Cpp\Program0\Program0\main.cpp(71,1): fatal error C1004: unexpected end-of-file found
+  program0.cpp
+C:\Users\Landon\Documents\GitHub\Buell-CS410-Cpp\Program0\Program0\program0.h(29,23): error C2039: 'string': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\cmath(656): message : see declaration of 'std'
+C:\Users\Landon\Documents\GitHub\Buell-CS410-Cpp\Program0\Program0\program0.h(29,30): error C2065: 'string': undeclared identifier
+C:\Users\Landon\Documents\GitHub\Buell-CS410-Cpp\Program0\Program0\program0.h(29,30): error C2146: syntax error: missing ')' before identifier 'msg'
+  Generating Code...

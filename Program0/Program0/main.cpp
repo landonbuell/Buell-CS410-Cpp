@@ -12,29 +12,37 @@ int main()
 	// Main Function
 
 	double axisA,axisB;
-	while (true) 
+	while (true)
 	{
-		// Accept User input
 		try 
 		{
+			// Repeatedly Accept Input
+			std::cout << "Enter major Axis: ";
 			std::cin >> axisA;
+			std::cout << "Enter minor Axis: ";
 			std::cin >> axisB;
+			
+			// Convert to Doubles?
 			break;
 		}
 		catch (std::exception)
 		{
-			std::cout << "\t ERROR! - Invalid Input";
+			std::cout << "\t ERROR! - Invalid Input" << std::endl;
 		}
 
 	}
 
+	// Show results to user, make class instance 
+	std::cout << "Major Axis:" << axisA << std::endl;
+	std::cout << "Minor Axis:" << axisB << std::endl;
+	PerimeterOfEllipse Ellipse(axisA, axisB);
+
+	// Print Result of Each Approximation, in order
+	double ram1st = Ellipse.RamanujanFirst();
+	PrintResult("Ramanujan's 1st Approximation", ram1st);
 	
 
 	return 0;
 }
 
-double ParseInput() 
-{
-
-}
 
