@@ -1,28 +1,28 @@
 #pragma once
-
-#include <cmath>
-
+#include <string>
 
 class PerimeterOfEllipse {
 
-public:
-	double _a, _b;
-	double _area;
-	double pi;
+	public:
+		double _a, _b;
+		double _area;
+		double pi;
 
-	PerimeterOfEllipse(double axisMajor, double axisMinor);
+		PerimeterOfEllipse(double axisMajor, double axisMinor);
 
-	double RamanujanFirst();
+		double RamanujanFirst();
 
-	double RamanujanSecond();
+		double RamanujanSecond();
 
-	double MuirFormula();
+		double MuirFormula();
 
-	double HudsonFormula();
+		double HudsonFormula();
 
-	double HolderMean();
+		double HolderMean();
 
-	double CantrellFormula();
+		double CantrellFormula();
+
+		void ShowAllResults();
 
 };
 

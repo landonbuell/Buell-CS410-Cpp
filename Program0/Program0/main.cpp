@@ -33,14 +33,10 @@ int main()
 	}
 
 	// Show results to user, make class instance 
-	std::cout << "Major Axis:" << axisA << std::endl;
-	std::cout << "Minor Axis:" << axisB << std::endl;
+	std::cout << "Major Axis: " << axisA << std::endl;
+	std::cout << "Minor Axis: " << axisB << std::endl;
 	PerimeterOfEllipse Ellipse(axisA, axisB);
-
-	// Print Result of Each Approximation, in order
-	double ram1st = Ellipse.RamanujanFirst();
-	PrintResult("Ramanujan's 1st Approximation", ram1st);
-	
+	Ellipse.ShowAllResults();
 
 	return 0;
 }
