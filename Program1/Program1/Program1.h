@@ -1,5 +1,18 @@
 #pragma once
 
+#include <iostream>
+#include <tuple>
+
+class ArgumentParser
+{
+public:
+	float pt1 [2];
+	float pt2 [2];
+
+	void GetInput();
+
+};
+
 class PointSystem
 {
 public:

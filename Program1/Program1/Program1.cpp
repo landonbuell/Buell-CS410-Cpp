@@ -1,6 +1,12 @@
 #include "Program1.h"
 #include <cmath>
 
+void ArgumentParser::GetInput()
+{
+	// Get user Input
+	
+}
+
 PointSystem::PointSystem(float x1, float y1, float x2, float y2)
 {
 	// Constructor for Point System
@@ -26,7 +32,7 @@ float PointSystem::BearingAngle()
 	float dx, dy;
 	dx = _x2 - _x1;
 	dy = _y2 - _y1;
-	return atan2(dx, dy);
+	return atan2(dx, dy);	
 }
 
 float PointSystem::SweepAngle()
@@ -40,17 +46,19 @@ float PointSystem::SweepAngle()
 float Conversions::DegToRad(float deg)
 {
 	// Convert units of degrees to units of radians
-	return 0.0;
+	float pi = 3.14159265;
+	return deg * (pi/180);
 }
 
 float Conversions::RadToDeg(float rad)
 {
 	// Convert units of radians to degrees
-	return 0.0;
+	float pi = 3.14159265;
+	return rad * (180/pi);
 }
 
 float Conversions::MtrsToFt(float mtr)
 {
 	// Convert units of Meters to Feet
-	return 0.0;
+	return mtr * 3.2808;
 }
